@@ -1,8 +1,46 @@
+<!DOCTYPE html>
 <html>
 <head>
-</head>
+	<!-- https://maps.google.com/maps?q=48.76457,-122.476042&num=1&t=m&z=18 -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 150px; width: 150px}
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeTm5mW7RrhPF804Lz3dd4jbfs_ucOU0E&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(48.76457,-122.476042),
+          zoom: 12,
+          disableDefaultUI: true,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+
+        var myLatlng = new google.maps.LatLng(48.76457,-122.476042);
+
+        var marker = new google.maps.Marker({
+      		position: myLatlng,
+      		map: map,
+      		title:"Hello World!"
+  		});
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+
+
+
+    </script>
+  </head>
+
 <body>
 <h1>Real Story</h1>
 <h2>Be the best at selling your home</h2>
+<div id="map-canvas"/>
 </body>
 </html>
