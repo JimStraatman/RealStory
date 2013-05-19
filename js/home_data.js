@@ -1,5 +1,5 @@
-HomeData = [];
-HomeData[0] = {loc: {
+var HomeData = {};
+HomeData['2111-G-Street'] = {loc: {
 		  address:"2111 G Street",
 		  city:"Bellingham",
 		  state:"WA",
@@ -13,7 +13,7 @@ HomeData[0] = {loc: {
 		 lot:4750,
 		 price:256608}
 	      };
-HomeData[1] = {loc: {
+HomeData['2654-S-Park-Dr'] = {loc: {
 		  address:"2654 S Park Dr",
 		  city:"Bellingham",
 		  state:"WA",
