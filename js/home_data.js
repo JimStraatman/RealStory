@@ -1,19 +1,21 @@
-var HomeData = {};
-HomeData['2111-G-Street'] = {loc: {
-		  address:"2111 G Street",
-		  city:"Bellingham",
-		  state:"WA",
-		  zip:"98225",
-		  lat: "48.760225",
-		  lon: "-122.482055"},
-	       info: {
-		 bed:2,
-		 bath:1,
-		 sqft:1152,
-		 lot:4750,
-		 price:256608},
+function HomeListCtrl($scope) {
 
-		 posts: [
+  $scope.homes = [ {id:'2111-G-Street',
+		    loc: {
+		      address:"2111 G Street",
+		      city:"Bellingham",
+		      state:"WA",
+		      zip:"98225",
+		      lat: "48.760225",
+		      lon: "-122.482055"},
+		     info: {
+		       bed:2,
+		       bath:1,
+		       sqft:1152,
+		       lot:4750,
+		       price:256608},
+
+		     posts: [
 			{
 				postBody: "The house in 1930. Lawn bowling in the park and a classic Buick 8 parked out front.", 
 				postVideoURL: "",
@@ -65,9 +67,9 @@ HomeData['2111-G-Street'] = {loc: {
 				date: new Date(Date.parse('5/1/13'))
 			}
 		]
-
-	      };
-HomeData['2654-S-Park-Dr'] = {loc: {
+	      },
+	      {id:'2654-S-Park-Dr',
+	       loc: {
 		  address:"2654 S Park Dr",
 		  city:"Bellingham",
 		  state:"WA",
@@ -79,8 +81,8 @@ HomeData['2654-S-Park-Dr'] = {loc: {
 		 bath:3,
 		 sqft:3149,
 		 lot:5227,
-		 price:590000}
-		 posts: [
+		 price:590000},
+	       posts: [
 			{
 				postBody: "Rebuilding the chimney, keeping the character and style of the period.",
 				postVideoURL: "",
@@ -103,4 +105,5 @@ HomeData['2654-S-Park-Dr'] = {loc: {
 				date: new Date(Date.parse('4/12/13'))
 			}
 			]
-	      };
+	      }];
+}
