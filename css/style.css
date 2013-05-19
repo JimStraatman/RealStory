@@ -61,10 +61,15 @@ h3.address { padding: .1em 0 19px; }
 }
 
 .feedform ul li input {
+    font-size: 1em;
+    padding: 15px 5px !important;
+    margin: 0;
     font-family: 'Noto Sans', sans-serif;
 }
 
 li .txtarea {
+    font-size: 1em;
+    padding: 5px !important;
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
