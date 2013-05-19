@@ -7,13 +7,15 @@ angular.module('homeMediaFilters', []).
   }).
   filter('video', function() {
     return function(input) {
-      var str = "VIDEO GO HERE";
+    var str = "<iframe width='635' height='357' "+
+	      "src='http://www.youtube.com/embed/" + input +
+	      "' frameborder='0' allowfullscreen></iframe>";
       return input ? str : ""; 
     };
   }).
   filter('link', function() {
     return function(input) {
-      var str = "LINK HERE";
+      var str = "<a href='"+ input +"'>"+input+"</a>";
       return input ? str : "";
     };
   });
