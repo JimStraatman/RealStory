@@ -1,0 +1,56 @@
+   <div class="row" id="head">
+      	<div class="seven columns right-line">
+	  <h1 class="address">{{home.loc.address}}</h1>
+	  <h3 class="address">{{home.loc.city}}, {{home.loc.state}} {{home.loc.zip}}</h3>
+      	</div>
+        <div class="five columns right-line">
+        	<ul id="house">
+		  <li><span>{{home.info.bed}}</span><span>Beds</span></li>
+		  <li><span>{{home.info.bath}}</span><span>Baths</span></li>
+		  <li><span>{{home.info.sqft}}</span><span>Sq. Ft.</span></li>
+        	</ul>
+		</div>
+	    <div class="four columns">
+	      <h1 class="price"><span>$</span>{{home.info.price}}</h1>
+	    </div>
+
+      </div>
+
+	  <div class="row">
+	    <div class="sixteen columns">
+		    <img src="./img/1140x765.gif" alt="house images" class="main-imgs"/>
+	    </div>
+	  </div>
+
+	  <div class="row">
+		<div class="six columns">
+	  <div><iframe style="width:100%; height:350px; -moz-box-shadow:    0px 2px 4px 0px rgba(0,0,0,0.20); -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20); box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Awesome(Real+Story)&ie=UTF8&z=14&t=m&iwloc=near&output=embed"></iframe></div>
+		<br>
+		<br>
+		  <form class="feedform" name="feedback_form" action="" method="post">
+				<ul>
+					<li class="field"><input class="text input" type="text" placeholder="Name Please" /></li>
+					<li class="field"><input class="email input" type="email" placeholder="bob@awesome.com" /></li>
+					<li><textarea class="txtarea" rows="4">Write awesome feedback here.</textarea></li>
+				</ul>
+		  </form>
+		</div>
+		  <div class="ten columns">
+			  <div class="posts">
+				  <ul>
+					  <li ng-repeat="post in home.posts">
+					  <h2 class="posts-header">{{post.date}}</h2>
+					  <div class="posts-body">
+					    <p>{{post.postBody}} </p>
+					  </div>
+					  <img src={{post.postImageURl}} class="post-img" alt="awesome house"/>
+					  </li>
+					  <li>
+
+					  </li>
+				  </ul>
+			  </div>
+		  </div>
+	  </div>
+  </div> <!--End container -->
+
