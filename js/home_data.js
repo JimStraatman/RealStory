@@ -26,7 +26,11 @@ RealStory.homes = function() {
 				date: 'January 1st, 2013'
 			},
 			{
+<<<<<<< HEAD
 				postBody: "My neighbors rock, they're planting trees to beautify the Lettered Streets.",
+=======
+
+>>>>>>> master
 				postVideoURL: "",
 				postImageURl: "",
 				postLinkURL: "https://www.facebook.com/LetteredStreets",
