@@ -3,13 +3,16 @@ RealStory.homes = function() {
   var my = {};
 
   var hash = {'2111-G-Street': {
+		    img: {
+		      url:"http://farm9.staticflickr.com/8269/8751835800_05ae7dd959_b.jpg"
+		    },
 		    loc: {
 		      address:"2111 G Street",
 		      city:"Bellingham",
 		      state:"WA",
 		      zip:"98225",
-		      lat: "48.760225",
-		      lon: "-122.482055"},
+		      lat: "48.760234",
+		      lon: "-122.482039"},
 		     info: {
 		       bed:2,
 		       bath:1,
@@ -35,13 +38,16 @@ RealStory.homes = function() {
 		       ]
 	      },
 	      '2654-S-Park-Dr': {
+	       img: { 
+		 url:"http://farm8.staticflickr.com/7340/8751282468_3e3055ea57_b.jpg"
+	       },
 	       loc: {
 		  address:"2654 S Park Dr",
 		  city:"Bellingham",
 		  state:"WA",
 		  zip:"98225",
-		  lat: "48.764606",
-		  lon: "-122.476028"},
+		  lat: "48.76457",
+		  lon: "-122.476042"},
 	       info: {
 		 bed:4,
 		 bath:3,
