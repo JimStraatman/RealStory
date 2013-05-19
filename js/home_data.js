@@ -1,6 +1,8 @@
-function HomeListCtrl($scope) {
+RealStory = {};
+RealStory.homes = function() {
+  var my = {};
 
-  $scope.homes = [ {id:'2111-G-Street',
+  var hash = {'2111-G-Street': {
 		    loc: {
 		      address:"2111 G Street",
 		      city:"Bellingham",
@@ -46,7 +48,7 @@ function HomeListCtrl($scope) {
 				date: new Date(Date.parse('3/14/13'))
 			},
 			{
-				postBody: "Everett C. Lyle, a civil engineer for the Bellingham Bay Improvement Company, was responsible for the Broadway Park plat‘s undulating design.", 
+
 				postVideoURL: "",
 				postImageURl: "http://www.flickr.com/photos/88279756@N07/8752426306/",
 				postLinkURL: "",
@@ -68,7 +70,7 @@ function HomeListCtrl($scope) {
 			}
 		]
 	      },
-	      {id:'2654-S-Park-Dr',
+	      '2654-S-Park-Dr': {
 	       loc: {
 		  address:"2654 S Park Dr",
 		  city:"Bellingham",
@@ -105,5 +107,22 @@ function HomeListCtrl($scope) {
 				date: new Date(Date.parse('4/12/13'))
 			}
 			]
-	      }];
+	      }};
+  my.list = function() {
+    var list = [];
+    $.each(hash, function(i,v) { $.merge(list, [i]); });
+    return list;
+  };
+  my.getHomeByID = function(id) {
+    return hash[id];
+  };
+
+  return my;
+};
+function HomeListCtrl($scope) {
+  $scope.homes = RealStory.homes().list();
+}
+
+function HomeDetailCtrl($scope, $routeParams) {
+  $scope.home = RealStory.homes().getHomeByID($routeParams.homeId);
 }

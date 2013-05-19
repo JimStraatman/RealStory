@@ -5,7 +5,7 @@
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
 <!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 9]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product" ng-app="realstory"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
 
@@ -40,6 +40,10 @@
 	<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 
   <script src="js/libs/modernizr-2.6.2.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js">
+  </script>
+  <script src="./js/app.js"></script>
+  <script src="./js/home_data.js"></script>
 </head>
 <body>
 
@@ -52,68 +56,9 @@
 
  <!-- Sixteen Column Grid /-->
 
-  <section class="sixteen colgrid">
+  <section class="sixteen colgrid" ng-view>
 
-      <div class="row" id="head">
-      	<div class="seven columns right-line">
-      		<h1 class="address">2033 2nd Ave #1409</h1>
-	        <h3 class="address">Seattle, WA 98121</h3>
-      	</div>
-        <div class="five columns right-line">
-        	<ul id="house">
-		        <li><span>3</span><span>Beds</span></li>
-		        <li><span>2</span><span>Baths</span></li>
-		        <li><span>2504</span><span>Sq. Ft.</span></li>
-        	</ul>
-		</div>
-	    <div class="four columns">
-		    <h1 class="price"><span>$</span>1,699,000</h1>
-	    </div>
-
-      </div>
-
-	  <div class="row">
-	    <div class="sixteen columns">
-		    <img src="img/1140x765.gif" alt="house images" class="main-imgs"/>
-	    </div>
-	  </div>
-
-	  <div class="row">
-		<div class="six columns">
-	  <div><iframe style="width:100%; height:350px; -moz-box-shadow:    0px 2px 4px 0px rgba(0,0,0,0.20); -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20); box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Awesome(Real+Story)&ie=UTF8&z=14&t=m&iwloc=near&output=embed"></iframe></div>
-		<br>
-		<br>
-		  <form class="feedform" name="feedback_form" action="" method="post">
-				<ul>
-					<li class="field"><input class="text input" type="text" placeholder="Name Please" /></li>
-					<li class="field"><input class="email input" type="email" placeholder="bob@awesome.com" /></li>
-					<li><textarea class="txtarea" rows="4">Write awesome feedback here.</textarea></li>
-				</ul>
-		  </form>
-		</div>
-		  <div class="ten columns">
-			  <div class="posts">
-				  <ul>
-					  <li>
-						  <h2 class="posts-header">May 18, 2013</h2>
-						  <div class="posts-body">
-						  <p>For all the time we spend trying to improve our homes around here, have you ever considered getting off the home improvement train for a moment to make a list of the things about your home that are fan-frigging-tastic? I was talking to a friend the other day and she was voicing her frustration with her home. How it was too small and how it got so hot in the summer. But, I blurted out, it's adorable and so full of light and the layout's great for hanging out! Really? I could hear the surprise in her voice. Yes. Really.</p>
-
-							  <p>It's easy to complain about your home. After all, with so much decor porn around (including the amazing homes of the people who've been kind enough to open up their homes for inspection on this site), how can you not contrast and compare and wish and aspire?</p>
-
-							  <p>We've all got a list of things we'd love in our dream homes -- bigger kitchens, more light, a garden -- and another list of things we're planning to fix when we get the time or the money -- paint the kitchen, Elfa the closets, redecorate the bedroom (to share a few of the things that are on my list).</p>
-					      </div>
-						  <img src="img/house1.jpg" class="post-img" alt="awesome house"/>
-					  </li>
-					  <li>
-
-					  </li>
-				  </ul>
-			  </div>
-		  </div>
-	  </div>
-  </div> <!--End container -->
-
+   
 
 
   </section>
