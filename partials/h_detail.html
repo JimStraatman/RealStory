@@ -44,7 +44,7 @@
 					    <p>{{post.postBody}} </p>
 					  </div>
 					  <div ng-bind-html="post.postImageURl | image"></div> 
-					  <div ng-bind-html="post.postVideoURL| video"></div> 
+					  <div ng-bind-html-unsafe="post.postVideoURL| video"></div> 
 					  <div ng-bind-html="post.postLinkURL | link"></div> 
 					  </li>
 					  <li>
