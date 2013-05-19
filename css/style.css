@@ -1,16 +1,29 @@
 #nav1 {
     background-color: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
+}
+
+#head {
+    background-color: white;
+    margin-top: 0;
+    padding: 20px 0 20px 20px;
 }
 
 #house li {
     display: inline-block;
 }
 
+#house li:first-child {
+    padding: 0 0 0 18px;
+}
+
 #house li span {
     font-size: 42px; font-size: 2.625rem;
     display: block;
     text-align: center;
-    padding-top: 36px;
+    padding-top: 12px;
     padding-left: 20px;
 }
 
@@ -20,14 +33,14 @@
 }
 
 .price {
-    padding-bottom: 30px;
-    padding-left: 50px;
+    padding: 8px 0 30px 50px;
+    line-height: 1;
     color: #79CF19;
 }
 
 .price span {
     font-size: 42px; font-size: 2.625rem;
-    color: #444444
+    color: #444444;
 }
 
 .address {
@@ -35,11 +48,20 @@
     line-height: 1;
 }
 
-h1.address { padding-top: .7em; }
-h3.address { padding: .1em 0 0; }
+h1.address { padding-top: 8px; }
+h3.address { padding: .1em 0 19px; }
+
+.main-imgs {
+    padding-bottom: 20px;
+}
 
 .feedform ul li {
     padding-left: 3px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.feedform ul li input {
+    font-family: 'Noto Sans', sans-serif;
 }
 
 li .txtarea {
@@ -47,19 +69,34 @@ li .txtarea {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-color: #D8D8D8;
+    font-family: 'Noto Sans', sans-serif;
+    width: 100%;
 }
 
-/* .posts-header {
-    padding: 40px;
+.posts-header {
+    padding: 0 0 1.2em;
+    line-height: 1;
+    color: #79CF19;
 }
 
-.posts-body {
-    padding: 40px;
-}  */
 
 .posts li {
-    padding: 20px;
-    border: 1px solid #eee;
+    padding: 20px 35px;
+    /*border: 1px solid #eee;*/
     margin: 0 0 30px;
-    background-color: #F5F5F5;
+    background-color: white;
+    /*-moz-box-shadow:    0px 0px 4px 1px #EDEDED;*/
+    /*-webkit-box-shadow: 0px 0px 4px 1px #EDEDED;*/
+    /*box-shadow:         0px 0px 4px 1px #EDEDED;*/
 }
+
+.post-img {
+    width: 100%;
+    padding: 10px;
+}
+
+.right-line {
+    margin-right: -1px;
+    border-right: 1px solid #555;
+}
+

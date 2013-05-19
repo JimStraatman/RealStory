@@ -32,7 +32,7 @@ html { font-size: 16px; line-height: 2em; }
 
 html * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-body { background: white; font-family: 'Noto Sans', sans-serif; font-weight: 400; color: #555555; position: relative; -webkit-font-smoothing: antialiased; -webkit-backface-visibility: hidden; }
+body { background: #ffffff; font-family: 'Noto Sans', sans-serif; font-weight: 400; color: #555555; position: relative; -webkit-font-smoothing: antialiased; -webkit-backface-visibility: hidden; }
 @media only screen and (max-width: 767px) { body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; } }
 
 html, body { height: 100%; }
@@ -76,7 +76,7 @@ h6 { font-size: 10px; font-size: 0.625rem; }
 .subhead { color: #777; font-weight: normal; margin-bottom: 20px; }
 
 /*=====================================================  	Links & Paragraph styles 	 	======================================================*/
-p { font-family: "Open Sans"; font-weight: 400; font-size: 16px; font-size: 1rem; margin-bottom: 13px; line-height: 2.6em; }
+p { font-family: 'Noto Sans', sans-serif; font-weight: 400; font-size: 16px; font-size: 1em; margin-bottom: 13px; line-height: 1.9em; }
 p.lead { font-size: 12.5px; font-size: 0.78125rem; margin-bottom: 11px; }
 @media only screen and (max-width: 768px) { p { font-size: 11px; font-size: 0.6875rem; line-height: 2.6em; } }
 
