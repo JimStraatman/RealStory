@@ -6,7 +6,7 @@
     <style type="text/css">
       html { height: 100% }
       body { height: 100%; margin: 0; padding: 0 }
-      #map-canvas { height: 150px; width: 150px}
+      #map-canvas { height: 100%; width: 100%}
     </style>
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeTm5mW7RrhPF804Lz3dd4jbfs_ucOU0E&sensor=false">
@@ -22,18 +22,28 @@
         var map = new google.maps.Map(document.getElementById("map-canvas"),
             mapOptions);
 
-        var myLatlng = new google.maps.LatLng(48.76457,-122.476042);
+
+        // South Park
+        var SouthParkLatLon = new google.maps.LatLng(48.76457,-122.476042);
 
         var marker = new google.maps.Marker({
-      		position: myLatlng,
+      		position: SouthParkLatLon,
       		map: map,
-      		title:"Hello World!"
+      		title:"2654 South Park Drive"
   		});
+
+        // G Street
+
+        var GStreetLatLon = new google.maps.LatLng(48.760234,-122.482039);
+
+        var marker = new google.maps.Marker({
+      		position: GStreetLatLon,
+      		map: map,
+      		title:"2111 G Street"
+  		});
+
       }
       google.maps.event.addDomListener(window, 'load', initialize);
-
-
-
 
     </script>
   </head>
