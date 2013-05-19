@@ -48,3 +48,18 @@ li .txtarea {
     -webkit-border-radius: 4px;
     border-color: #D8D8D8;
 }
+
+/* .posts-header {
+    padding: 40px;
+}
+
+.posts-body {
+    padding: 40px;
+}  */
+
+.posts li {
+    padding: 20px;
+    border: 1px solid #eee;
+    margin: 0 0 30px;
+    background-color: #F5F5F5;
+}
